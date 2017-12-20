@@ -9,7 +9,7 @@ pipeline {
 
         stage ('Check for Versions') {
             steps{
-                sh "javac --version"
+                echo "hello world"
             }
         }   
     }
