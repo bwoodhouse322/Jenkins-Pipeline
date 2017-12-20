@@ -1,6 +1,8 @@
-node {
+node 
+
+//I BROKE THIS TO TEST IT
     stage('Build') {
-        checkout scm
+        checkout scmjhslcfbarjhldv
     }
     stage('Test') {
         echo 'Building....'
