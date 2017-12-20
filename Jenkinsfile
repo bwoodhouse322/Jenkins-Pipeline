@@ -1,15 +1,11 @@
-pipeline {
-    stages{
-        stage ('Build'){
-            steps{
-                checkout scm
-            }
-        }
-
-        stage ('Check for Versions') {
-            steps{
-                echo "hello world"
-            }
-        }   
+node {
+    stage('Build') {
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
     }
 }
