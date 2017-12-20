@@ -2,11 +2,15 @@ pipeline {
     agent any
     stages{
         stage ('Build'){
-            checkout scm
+            steps{
+                checkout scm
+            }
         }
 
         stage ('Check for Versions') {
-            sh "javac --version"
+            steps{
+                sh "javac --version"
+            }
         }   
     }
 }
